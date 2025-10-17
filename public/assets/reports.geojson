@@ -1,0 +1,59 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 34,
+        "description": "un cinghiale con 10 cuccioli",
+        "title": "pericolo cinghiali",
+        "date": "2025-10-17T07:10:27Z",
+        "categories": ["cinghiali", "cuccioli"],
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fp9I_SdF-EU_WaCH1gVDHfR5y2_i0S2dNA&s"
+        ]
+      },
+      "geometry": {
+        "coordinates": [8.940210604839052, 44.4104775276557],
+        "type": "Point"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 50,
+        "description": "",
+        "title": "lupo con rabbia",
+        "date": "2025-10-16T07:10:27Z",
+        "categories": ["lupi"],
+        "images": [
+          "https://thumbs.dreamstime.com/b/lupo-arrabbiato-28622903.jpg"
+        ]
+      },
+      "geometry": {
+        "coordinates": [8.979313187911544, 44.3991379298985],
+        "type": "Point"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "description": "capriolo ferito da un cacciatore si aggira per le strade",
+        "title": "capriolo ferito",
+        "date": "2025-10-15T07:10:27Z",
+        "categories": ["capriolo"],
+        "images": [
+          "https://www.genovatoday.it/~media/horizontal-hi/10994217475720/capriolo-cucciolo-ferito.jpeg"
+        ]
+      },
+      "geometry": {
+        "coordinates": [8.959746512427017, 44.415422915335114],
+        "type": "Point"
+      },
+      "id": 2
+    }
+  ]
+}
