@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototipo.Api", "Prototipo.Api\Prototipo.Api.csproj", "{DE0A09BA-3AD3-4341-B901-2A566357114F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototipo.Service", "Prototipo.Service\Prototipo.Service.csproj", "{C7EBA68C-8C59-466D-ABA7-0CB54A65D475}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE0A09BA-3AD3-4341-B901-2A566357114F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0A09BA-3AD3-4341-B901-2A566357114F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0A09BA-3AD3-4341-B901-2A566357114F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0A09BA-3AD3-4341-B901-2A566357114F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7EBA68C-8C59-466D-ABA7-0CB54A65D475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7EBA68C-8C59-466D-ABA7-0CB54A65D475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7EBA68C-8C59-466D-ABA7-0CB54A65D475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7EBA68C-8C59-466D-ABA7-0CB54A65D475}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EB0A537-825B-40D6-A46A-C337CAC3FBC6}
+	EndGlobalSection
+EndGlobal
