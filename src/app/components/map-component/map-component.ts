@@ -108,10 +108,59 @@ export class MapComponent {
 
 
 function createPopupContent(properties: any): string {
-  let result = '';  
-  for (const key in properties) {
-    const value = properties[key];
-    result += `<span><strong>${key}:</strong> ${value}</span><br/>`;
+  // let result = '';  
+  // for (const key in properties) {
+  //   const value = properties[key];
+  //   result += `<span><strong>${key}:</strong> ${value}</span><br/>`;
+  // }
+  // return result;
+
+  // let div = '<div class="popup-content">';
+  // for (const key in properties) {
+  //   const value = properties[key];
+  //   div += `<div class="popup-item"><strong>${key}:</strong> ${value}</div>`;
+  // }
+  // div += '</div>';
+  // return div;
+
+  // const container = document.createElement('div');
+  // container.className = 'popup-content';
+  // for (const key in properties) {
+  //   const value = properties[key];
+  //   const itemDiv = document.createElement('div');
+  //   itemDiv.className = 'popup-item';
+
+  //   const strong = document.createElement('strong');
+  //   strong.textContent = `${key}: `;
+
+  //   itemDiv.appendChild(strong);
+  //   itemDiv.appendChild(document.createTextNode(value));
+    
+
+  //   container.appendChild(itemDiv);
+  // }
+
+  // return container.outerHTML;
+
+  const container = document.createElement('div');
+  container.style.display = 'flex';
+  container.className = 'popup-content';
+
+  
+  if (properties.images && properties.images.length > 0) {
+    const image = document.createElement('img');
+    image.src = properties.images[0];
+    image.width = 50;
+    image.height = 50;
+    image.style.objectFit = 'cover';
+    container.appendChild(image);
+
   }
-  return result;
+
+  const titleDiv = document.createElement('div');
+  titleDiv.className = 'popup-title';
+  titleDiv.textContent = properties.title;
+  container.appendChild(titleDiv);
+
+  return container.outerHTML;
 }
