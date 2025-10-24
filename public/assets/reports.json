@@ -23,5 +23,18 @@
         ],
         "lat": 44.415422915335114,
         "lng": 8.959746512427017
+    },
+    {
+        "id": 34,
+        "description": "un cinghiale con 10 cuccioli",
+        "title": "pericolo cinghiali",
+        "date": "2025-10-17T07:10:27Z",
+        "categories": ["cinghiali", "cuccioli"],
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1fp9I_SdF-EU_WaCH1gVDHfR5y2_i0S2dNA&s"
+        ],
+        "lat": 44.4104775276557,
+        "lng": 8.940210604839052
+            
     }
 ]
