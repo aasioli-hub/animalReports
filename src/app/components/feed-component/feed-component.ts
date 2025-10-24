@@ -10,6 +10,12 @@ import { DataService } from '../../services/data-service/data-service';
 export class FeedComponent {
 
   private dataServ = inject(DataService);
+  public reports;
+
+  constructor() {
+    this.dataServ.getReportsGeoJson().then((data) => this.reports = data.features);
+  }
+
 
 
 }
