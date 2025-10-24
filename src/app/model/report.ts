@@ -7,4 +7,5 @@ export interface Report {
   images: string[];
   lat: number;
   lng: number;
+  distance?: number;
 }

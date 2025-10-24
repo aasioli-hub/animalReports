@@ -24,4 +24,10 @@ export class DataService {
       .catch((err) => console.error(err));
   }
 
+  getReport(id: Number): Promise<Report> {
+    return fetch('./assets/report.json')
+      .then((resp) => resp.json())
+      .catch((err) => console.error(err));
+  }
+
 }
