@@ -1,6 +1,6 @@
 export interface Properties {
   id: number
-  description: string
+  description?: string
   title: string
   date: string
   categories: string[]
