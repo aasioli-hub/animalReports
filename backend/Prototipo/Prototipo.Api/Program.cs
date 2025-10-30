@@ -1,5 +1,5 @@
-using Prototipo.Api.Services;
-using Prototipo.Api.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using Prototipo.Service;
 using Prototipo.Service.Services;
 using Prototipo.Service.Services.Interfaces;
 
@@ -12,12 +12,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddScoped<IPippoService, VasylPippoService>();
+builder.Services.AddDbContext<DatabaseContext>(options =>
+{
+  options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
 
+  options.UseNpgsql(connectionString);
+});
+    
 
-
-builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IUserInfoService, UserInfoService>();
 
 
 var app = builder.Build();
@@ -28,8 +33,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseAuthorization();
 
 app.MapControllers();
 
