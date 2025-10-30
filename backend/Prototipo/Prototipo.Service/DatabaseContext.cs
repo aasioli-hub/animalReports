@@ -18,6 +18,8 @@ namespace Prototipo.Service
     }
 
     public DbSet<UserInfo> UserInfo { get; set; }
+    public DbSet<Image> Image { get; set; }
+    public DbSet<Report> Report { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

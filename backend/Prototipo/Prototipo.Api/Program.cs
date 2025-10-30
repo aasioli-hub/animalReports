@@ -23,6 +23,7 @@ builder.Services.AddDbContext<DatabaseContext>(options =>
     
 
 builder.Services.AddScoped<IUserInfoService, UserInfoService>();
+builder.Services.AddScoped<IImageService, ImageService>();
 
 
 var app = builder.Build();
