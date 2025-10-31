@@ -4,10 +4,13 @@ import * as L from 'leaflet';
 import { Feature } from '../../model/feature';
 import { GeoJsonObject } from 'geojson';
 import { C } from '@angular/cdk/keycodes';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-map-component',
-  imports: [],
+  imports: [MatButtonModule, MatIconModule, RouterLink],
   templateUrl: './map-component.html',
   styleUrl: './map-component.scss',
 })

@@ -3,10 +3,13 @@ import { DataService } from '../../services/data-service/data-service';
 import { Report } from '../../model/report';
 import { ReportCardComponent } from '../report-card-component/report-card-component';
 import { LocationService } from '../../services/location-service/location-service';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-feed-component',
-  imports: [ReportCardComponent],
+  imports: [ReportCardComponent, MatButtonModule, MatIconModule, RouterLink],
   templateUrl: './feed-component.html',
   styleUrl: './feed-component.scss',
 })

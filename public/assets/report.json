@@ -1,12 +1,10 @@
 {
-        "id": 50,
-        "description": "",
-        "title": "lupo con rabbia",
-        "date": "2025-10-16T07:10:27Z",
-        "categories": ["lupi"],
-        "images": [
-          "https://thumbs.dreamstime.com/b/lupo-arrabbiato-28622903.jpg"
-        ],
-        "lat": 44.3991379298985,
-        "lng": 8.979313187911544
-    }
+  "id": 50,
+  "description": "",
+  "title": "lupo con rabbia",
+  "date": "2025-10-16T07:10:27Z",
+  "categories": ["lupi"],
+  "images": ["https://thumbs.dreamstime.com/b/lupo-arrabbiato-28622903.jpg"],
+  "lat": 44.3991379298985,
+  "lng": 8.979313187911544
+}
