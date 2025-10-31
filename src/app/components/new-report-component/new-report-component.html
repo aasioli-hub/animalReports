@@ -4,16 +4,31 @@
     <div class="cat-container" formArrayName="categories">
         <button (click)="addCategoryInput()">+</button>
         @for (category of categories.controls; track category; let i = $index) {
-            <div>
-                <select formControlName="{{i}}">
-                    @for (name of categoryNames; track $index) {    
-                        <option value="{{name}}">{{name}}</option>
-                    }
-                </select>
-                <button (click)="removeCategoryInput(i)">-</button>
-            </div>
-            
+        <div>
+            <select formControlName="{{i}}">
+                @for (name of categoryNames; track $index) {
+                <option value="{{name}}">{{name}}</option>
+                }
+            </select>
+            <button (click)="removeCategoryInput(i)">-</button>
+        </div>
+
         }
     </div>
+
+    <input 
+    type="file" 
+    accept="image/*" 
+    name="" 
+    id="" 
+    (change)="onImageSelected($event)" 
+    capture="enviroment" />
+
+    <div class="gallery">
+        @for (image of images; track $index) {
+        <img src="{{image}}" alt="">
+        }
+    </div>
+
     <button [disabled]="!reportForm.valid" type="submit">Submit Report</button>
 </form>

@@ -3,7 +3,7 @@ export interface Report {
   description?: string;
   title: string;
   date: string;
-  categories: Category[];
+  categories: string[];
   images: string[];
   lat: number;
   lng: number;
@@ -11,8 +11,8 @@ export interface Report {
 }
 
 
-enum Category{
-  Mammal = "Mammal",
-  Bird = "Bird",
-  Reptile = "Reptile",
-}
+// enum Category{
+//   Mammal = "Mammal",
+//   Bird = "Bird",
+//   Reptile = "Reptile",
+// }

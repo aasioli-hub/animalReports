@@ -36,4 +36,8 @@ export class DataService {
       .catch((err) => console.error(err));
   }
 
+  postReport(report: Report){
+    console.log(report);
+  }
+
 }
