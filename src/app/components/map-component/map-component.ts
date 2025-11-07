@@ -18,7 +18,9 @@ export class MapComponent {
   private map: L.Map | undefined;
 
   // private dataServ = inject(DataService);
-  constructor(private dataServ: DataService) {}
+  constructor(private dataServ: DataService) { }
+
+
 
   ngAfterViewInit() {
     this.setupMap();
@@ -52,7 +54,20 @@ export class MapComponent {
     geojsonLayer.addTo(this.map);
   }
 
-  myPointToLayer(point: any, latLng: L.LatLng) {
+  myPointToLayer = (point: any, latLng: L.LatLng) => {
+
+    console.log('Creating marker for point:', point);
+
+
+    // const colorCategory: Record<string, string> = {
+    //   cinghiali: 'brown',
+    //   lupi: 'gray',
+    //   caprioli: 'orange',
+    // }
+
+    // const categoryKey = String(point?.properties?.categories?.[0] ?? '');
+    // const fillColor = colorCategory[categoryKey] || 'blue';
+
     const geojsonMarkerOptions = {
       radius: 8,
       fillColor: '#ff7800',
@@ -61,7 +76,10 @@ export class MapComponent {
       opacity: 1,
       fillOpacity: 0.8,
     };
+
+
     return L.circleMarker(latLng, geojsonMarkerOptions);
+
   }
 
   myOnEachFeature(point: any, layer: L.Layer) {
@@ -138,7 +156,7 @@ function createPopupContent(properties: any): string {
 
   //   itemDiv.appendChild(strong);
   //   itemDiv.appendChild(document.createTextNode(value));
-    
+
 
   //   container.appendChild(itemDiv);
   // }
@@ -149,7 +167,7 @@ function createPopupContent(properties: any): string {
   container.style.display = 'flex';
   container.className = 'popup-content';
 
-  
+
   if (properties.images && properties.images.length > 0) {
     const image = document.createElement('img');
     image.src = properties.images[0];
